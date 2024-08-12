@@ -1,0 +1,92 @@
+   
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+  
+    a:link {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    a:active {
+        color: orange;
+    }
+
+    button:focus {
+        outline: 2px solid green;
+    }
+
+    p:first-child {
+        font-weight: bold;
+    }
+
+    p:last-child {
+        font-style: italic;
+    }
+
+    p:nth-child(2) {
+        color: green;
+    }
+
+    p:nth-of-type(odd) {
+        background-color: #f0f0f0;
+    }
+
+    p:nth-of-type(even) {
+        background-color: #d0d0d0;
+    }
+
+    p:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    input:disabled {
+        background-color: #ddd;
+    }
+
+    input:checked {
+        background-color: yellow;
+    }
+
+    /* Pseudo-elementos */
+    p::first-line {
+        font-size: 1.5em;
+        color: darkblue;
+    }
+
+    p::first-letter {
+        font-size: 2em;
+        color: darkred;
+    }
+
+    p::before {
+        content: "Início: ";
+        font-weight: bold;
+    }
+
+    p::after {
+        content: " Fim.";
+        font-style: italic;
+    }
+
+    .box::before {
+        content: "Antes - ";
+        color: blue;
+        font-weight: bold;
+    }
+
+    .box::after {
+        content: " - Depois";
+        color: red;
+        font-weight: bold;
+    }
